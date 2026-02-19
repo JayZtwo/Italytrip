@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>意大利旅游签证申请指南 & 行程规划</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --deep-blue: #1A3A5C;
+      --teal: #2196A6;
+      --lemon: #F5C842;
+      --coral: #E8614D;
+      --purple: #7B5EA7;
+      --green: #2E7D32;
+      --bg: #F5F7FA;
+      --card: #FFFFFF;
+      --text: #1A3A5C;
+      --text-muted: #6B7B8D;
+      --border: #E2E8F0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: 'Outfit', 'Noto Sans SC', sans-serif;
+    }
+
+    .mono {
+      font-family: 'Space Grotesk', monospace;
+    }
+
+    a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=1600') center/cover no-repeat;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(26, 58, 92, 0.75), rgba(33, 150, 166, 0.6));
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.8rem, 5vw, 2.8rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .hero p {
+      font-size: clamp(0.9rem, 2vw, 1.1rem);
+      opacity: 0.9;
+    }
+
+    .flag {
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .flag span {
+      width: 10px;
+      height: 32px;
+      border-radius: 3px;
+    }
+
+    .flag .g {
+      background: #009246;
+    }
+
+    .flag .w {
+      background: #fff;
+    }
+
+    .flag .r {
+      background: #CE2B37;
+    }
+
+    /* Nav tabs */
+    .nav-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--card);
+      border-bottom: 1px solid var(--border);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+      overflow-x: auto;
+    }
+
+    .nav-inner {
+      display: flex;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .nav-btn {
+      flex-shrink: 0;
+      padding: 12px 18px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      border: none;
+      background: none;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s;
+      white-space: nowrap;
+    }
+
+    .nav-btn:hover {
+      color: var(--teal);
+    }
+
+    .nav-btn.active {
+      color: var(--teal);
+      border-bottom-color: var(--teal);
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    section {
+      padding: 48px 0 24px;
+      scroll-margin-top: 60px;
+    }
+
+    .section-title {
+      font-size: clamp(1.4rem, 3vw, 1.8rem);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .section-sub {
+      color: var(--text-muted);
+      font-size: 14px;
+      margin-bottom: 24px;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      transition: box-shadow 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    /* Tags */
+    .tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 2px 10px;
+      border-radius: 20px;
+    }
+
+    .tag-red {
+      background: #FEE2E2;
+      color: #DC2626;
+    }
+
+    .tag-blue {
+      background: #DBEAFE;
+      color: #2563EB;
+    }
+
+    .tag-green {
+      background: #D1FAE5;
+      color: #059669;
+    }
+
+    .tag-yellow {
+      background: #FEF3C7;
+      color: #D97706;
+    }
+
+    .tag-gray {
+      background: #F3F4F6;
+      color: #6B7280;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 24px;
+      font-size: 13px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-decoration: none;
+    }
+
+    .btn-teal {
+      background: var(--teal);
+      color: #fff;
+    }
+
+    .btn-teal:hover {
+      background: var(--deep-blue);
+      text-decoration: none;
+    }
+
+    .btn-coral {
+      background: var(--coral);
+      color: #fff;
+    }
+
+    .btn-coral:hover {
+      background: #d4533f;
+      text-decoration: none;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid var(--teal);
+      color: var(--teal);
+    }
+
+    .btn-outline:hover {
+      background: var(--teal);
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Checklist */
+    .checklist-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 8px;
+      cursor: pointer;
+      transition: all 0.2s;
+      background: var(--card);
+    }
+
+    .checklist-item:hover {
+      border-color: var(--teal);
+    }
+
+    .checklist-item.checked {
+      background: #F0FDF4;
+      border-color: #86EFAC;
+    }
+
+    .checklist-item.checked .check-box {
+      background: #059669;
+      border-color: #059669;
+    }
+
+    .checklist-item.checked .check-box::after {
+      content: '✓';
+      color: #fff;
+      font-size: 12px;
+    }
+
+    .check-box {
+      width: 22px;
+      height: 22px;
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      transition: all 0.2s;
+    }
+
+    .progress-bar {
+      height: 8px;
+      background: #E5E7EB;
+      border-radius: 4px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--teal), #34D399);
+      border-radius: 4px;
+      transition: width 0.4s ease;
+    }
+
+    /* Timeline */
+    .timeline-item {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .timeline-dot {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .timeline-card {
+      flex: 1;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .timeline-card:hover {
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .timeline-expand {
+      display: none;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-top: 8px;
+      margin-left: 60px;
+    }
+
+    .timeline-expand.open {
+      display: block;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--deep-blue);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    tr:hover td {
+      background: #F8FAFC;
+    }
+
+    /* Tip boxes */
+    .tip-box {
+      padding: 16px;
+      border-radius: 12px;
+      margin-bottom: 12px;
+      font-size: 13px;
+    }
+
+    .tip-danger {
+      background: #FEF2F2;
+      border-left: 4px solid #EF4444;
+    }
+
+    .tip-warning {
+      background: #FFFBEB;
+      border-left: 4px solid #F59E0B;
+    }
+
+    .tip-info {
+      background: #EFF6FF;
+      border-left: 4px solid #3B82F6;
+    }
+
+    .tip-success {
+      background: #F0FDF4;
+      border-left: 4px solid #22C55E;
+    }
+
+    /* Emergency */
+    .emergency-group {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    .emergency-header {
+      background: var(--deep-blue);
+      color: #fff;
+      padding: 12px 20px;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .emergency-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 20px;
+      border-bottom: 1px solid var(--border);
+      gap: 12px;
+    }
+
+    .emergency-row:last-child {
+      border-bottom: none;
+    }
+
+    /* Chart container */
+    .chart-box {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+
+    .chart-box canvas {
+      max-height: 300px;
+    }
+
+    /* Countdown */
+    .countdown {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .countdown-item {
+      text-align: center;
+    }
+
+    .countdown-num {
+      font-family: 'Space Grotesk', monospace;
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(8px);
+      border-radius: 12px;
+      padding: 8px 16px;
+      min-width: 70px;
+    }
+
+    .countdown-label {
+      font-size: 12px;
+      opacity: 0.8;
+      margin-top: 4px;
+    }
+
+    /* Page switch */
+    .page-switch {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin: 24px 0;
+      flex-wrap: wrap;
+    }
+
+    .page-switch .btn {
+      min-width: 140px;
+      justify-content: center;
+    }
+
+    .page-switch .btn.active-page {
+      background: var(--deep-blue);
+      color: #fff;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--deep-blue);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+
+    /* Attraction card */
+    .attr-card {
+      background: #F8FAFC;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+
+    .attr-card-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      display: block;
+      background: #E2E8F0;
+    }
+
+    .attr-card-body {
+      padding: 12px 16px 16px;
+    }
+
+    .attr-card h5 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .attr-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 8px;
+    }
+
+    .attr-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      margin-bottom: 8px;
+    }
+
+    /* Weather card */
+    .weather-card {
+      text-align: center;
+      padding: 16px;
+    }
+
+    .weather-card .temp {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--coral);
+    }
+
+    /* Responsive */
+    @media (max-width: 640px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .grid-4 {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .nav-btn {
+        padding: 10px 12px;
+        font-size: 12px;
+      }
+
+      .timeline-expand {
+        margin-left: 0;
+      }
+    }
+
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Hidden pages */
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    /* Wave divider */
+    .wave-divider {
+      width: 100%;
+      overflow: hidden;
+      line-height: 0;
+    }
+
+    .wave-divider svg {
+      display: block;
+      width: 100%;
+      height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="flag"><span class="g"></span><span class="w"></span><span class="r"></span></div>
+      <h1>意大利旅游签证 & 行程规划</h1>
+      <p>面向中国公民的申根C类签证完整攻略 · 杭州出发 · 2026年4月25日 — 5月5日</p>
+      <div class="countdown" id="countdown"></div>
+      <div class="page-switch">
+        <button class="btn btn-outline active-page" onclick="switchPage('visa')" id="btn-visa">📋 签证指南</button>
+        <button class="btn btn-outline" onclick="switchPage('trip')" id="btn-trip">✈️ 行程规划</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== VISA PAGE ===== -->
+  <div class="page active" id="page-visa">
+
+    <nav class="nav-bar" id="nav-visa">
+      <div class="nav-inner">
+        <button class="nav-btn active" onclick="scrollToSection('overview')">签证概览</button>
+        <button class="nav-btn" onclick="scrollToSection('materials')">材料清单</button>
+        <button class="nav-btn" onclick="scrollToSection('process')">申请流程</button>
+        <button class="nav-btn" onclick="scrollToSection('fees')">费用明细</button>
+        <button class="nav-btn" onclick="scrollToSection('jurisdiction')">领区分布</button>
+        <button class="nav-btn" onclick="scrollToSection('schedule')">时间规划</button>
+        <button class="nav-btn" onclick="scrollToSection('tips')">注意事项</button>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Overview -->
+      <section id="overview">
+        <h2 class="section-title">签证概览</h2>
+        <p class="section-sub">申根C类短期签证 · 180天内最多停留90天</p>
+        <div class="grid-4">
+          <div class="card" style="text-align:center;">
+            <div style="font-size:28px;margin-bottom:8px;">🇮🇹</div>
+            <div style="font-weight:700;">签证类型</div>
+            <div style="font-size:13px;color:var(--text-muted);">申根C类短期签证</div>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:28px;margin-bottom:8px;">📅</div>
+            <div style="font-weight:700;">停留时间</div>
+            <div style="font-size:13px;color:var(--text-muted);">180天内最多90天</div>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:28px;margin-bottom:8px;">⏱️</div>
+            <div style="font-weight:700;">审理时间</div>
+            <div style="font-size:13px;color:var(--text-muted);">15-45个自然日</div>
+          </div>
+          <div class="card" style="text-align:center;">
+            <div style="font-size:28px;margin-bottom:8px;">💰</div>
+            <div style="font-weight:700;">签证费用</div>
+            <div class="mono" style="font-size:13px;color:var(--coral);">€90 + ¥78服务费</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Materials Checklist -->
+      <section id="materials">
+        <h2 class="section-title">材料清单</h2>
+        <p class="section-sub">共13项材料，可勾选追踪准备进度（状态自动保存）</p>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <div class="progress-bar" style="flex:1;">
+            <div class="progress-fill" id="progress-fill" style="width:0%;"></div>
+          </div>
+          <span class="mono" style="font-size:14px;font-weight:700;color:var(--teal);" id="progress-text">0/13</span>
+        </div>
+        <div id="checklist-container"></div>
+      </section>
+
+      <!-- Process -->
+      <section id="process">
+        <h2 class="section-title">申请流程</h2>
+        <p class="section-sub">五步完成签证申请</p>
+        <div id="process-timeline"></div>
+      </section>
+
+      <!-- Fees -->
+      <section id="fees">
+        <h2 class="section-title">费用明细</h2>
+        <p class="section-sub">签证费 + 服务费 + 可选增值服务</p>
+        <div class="grid-2">
+          <div>
+            <h4 style="margin-bottom:12px;font-size:15px;">签证费（使馆收取）</h4>
+            <table>
+              <tr>
+                <th>类别</th>
+                <th>欧元</th>
+                <th>人民币</th>
+              </tr>
+              <tr>
+                <td>成人（12岁以上）</td>
+                <td class="mono">€90</td>
+                <td class="mono">¥744</td>
+              </tr>
+              <tr>
+                <td>6-12岁儿童</td>
+                <td class="mono">€45</td>
+                <td class="mono">¥372</td>
+              </tr>
+              <tr>
+                <td>6岁以下儿童</td>
+                <td class="mono">€0</td>
+                <td class="mono">¥0</td>
+              </tr>
+            </table>
+            <h4 style="margin:20px 0 12px;font-size:15px;">服务费（签证中心收取）</h4>
+            <table>
+              <tr>
+                <th>类别</th>
+                <th>费用</th>
+              </tr>
+              <tr>
+                <td>个人签证服务费</td>
+                <td class="mono">¥78</td>
+              </tr>
+              <tr>
+                <td>ADS团队签证服务费</td>
+                <td class="mono">¥62</td>
+              </tr>
+              <tr>
+                <td>6岁以下儿童</td>
+                <td class="mono">¥0</td>
+              </tr>
+              <tr>
+                <td>60岁及以上</td>
+                <td class="mono">¥62</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <div class="chart-box">
+              <h4 style="font-size:14px;margin-bottom:12px;">费用构成图</h4>
+              <canvas id="feeChart"></canvas>
+            </div>
+            <h4 style="margin-bottom:12px;font-size:15px;">可选增值服务</h4>
+            <table>
+              <tr>
+                <th>服务项目</th>
+                <th>费用</th>
+              </tr>
+              <tr>
+                <td>打印服务</td>
+                <td class="mono">¥3/张</td>
+              </tr>
+              <tr>
+                <td>短信/邮箱通知</td>
+                <td class="mono">¥15</td>
+              </tr>
+              <tr>
+                <td>照相服务</td>
+                <td class="mono">¥30</td>
+              </tr>
+              <tr>
+                <td>复印服务</td>
+                <td class="mono">¥1/张</td>
+              </tr>
+              <tr>
+                <td>填表服务</td>
+                <td class="mono">¥50</td>
+              </tr>
+              <tr>
+                <td>快递服务</td>
+                <td class="mono">¥50</td>
+              </tr>
+              <tr>
+                <td>翻译服务</td>
+                <td class="mono">¥65/页</td>
+              </tr>
+              <tr>
+                <td>贵宾服务</td>
+                <td class="mono">¥240</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Jurisdiction -->
+      <section id="jurisdiction">
+        <h2 class="section-title">领区分布</h2>
+        <p class="section-sub">根据户籍或居住地选择对应领区的签证中心</p>
+        <div class="grid-2" id="jurisdiction-cards"></div>
+      </section>
+
+      <!-- Schedule -->
+      <section id="schedule">
+        <h2 class="section-title">时间规划</h2>
+        <p class="section-sub">五一出发的签证申请时间线</p>
+        <div class="chart-box">
+          <canvas id="scheduleChart" style="max-height:260px;"></canvas>
+        </div>
+        <div id="schedule-timeline"></div>
+      </section>
+
+      <!-- Tips -->
+      <section id="tips">
+        <h2 class="section-title">注意事项</h2>
+        <p class="section-sub">重要提醒和实用建议</p>
+        <div id="tips-container"></div>
+        <h3 style="margin:24px 0 12px;font-size:16px;">特殊人群补充材料</h3>
+        <div class="grid-3" id="special-people"></div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ===== TRIP PAGE ===== -->
+  <div class="page" id="page-trip">
+
+    <nav class="nav-bar" id="nav-trip">
+      <div class="nav-inner">
+        <button class="nav-btn active" onclick="scrollToSection('flights')">航班推荐</button>
+        <button class="nav-btn" onclick="scrollToSection('shanghai-compare')" style="color:#E8614D;font-weight:700;">🔄
+          上海对比</button>
+        <button class="nav-btn" onclick="scrollToSection('itinerary')">每日行程</button>
+        <button class="nav-btn" onclick="scrollToSection('trains')">城际交通</button>
+        <button class="nav-btn" onclick="scrollToSection('hotels')">住宿建议</button>
+        <button class="nav-btn" onclick="scrollToSection('budget')">费用预算</button>
+        <button class="nav-btn" onclick="scrollToSection('saving')">省钱攻略</button>
+        <button class="nav-btn" onclick="scrollToSection('packing')">行李清单</button>
+        <button class="nav-btn" onclick="scrollToSection('weather')">天气参考</button>
+        <button class="nav-btn" onclick="scrollToSection('emergency')">紧急联系</button>
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Flights -->
+      <section id="flights">
+        <h2 class="section-title">航班推荐</h2>
+        <p class="section-sub">推荐使用开口票（进罗马FCO、出米兰MXP），避免折返更省时间和费用</p>
+        <div class="tip-box tip-success" style="margin-bottom:20px;">
+          <strong>⭐ 推荐：开口票（Open-jaw）</strong><br>
+          <span
+            style="font-size:13px;">去程飞罗马FCO，回程从米兰MXP出发。沿着罗马→佛罗伦萨→威尼斯→米兰的经典路线一路向北，无需折返。天巡数据显示4月25日出发、5月5日返回的开口票往返含税约<strong>¥5,637起</strong>（海南航空+维兹航空），海南航空非旺季往返约<strong>¥3,639起</strong>。</span>
+        </div>
+        <h4 style="margin-bottom:12px;">去程：杭州 → 罗马（4月25日）</h4>
+        <div class="grid-2" id="outbound-flights"></div>
+        <h4 style="margin:20px 0 12px;">回程：米兰 → 杭州（5月4日出发，5月5日白天到达）</h4>
+        <div class="grid-2" id="return-flights"></div>
+        <div class="tip-box"
+          style="margin:20px 0;background:linear-gradient(135deg,#F0F9FF,#E0F7FA);border-color:var(--teal);">
+          <strong style="display:flex;align-items:center;gap:6px;margin-bottom:10px;">📉 比价搜索引擎 · 实时查看最新价格</strong>
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:10px;">
+            <a href="https://www.tianxun.com/routes/hgh/rome/hangzhou-to-rome.html" target="_blank"
+              style="background:white;border-radius:10px;padding:10px;text-align:center;text-decoration:none;color:var(--navy);border:1px solid rgba(33,150,166,0.15);transition:box-shadow 0.2s;"
+              onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+              <div style="font-weight:600;font-size:12px;">天巡 Skyscanner</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">综合比价·推荐</div>
+            </a>
+            <a href="https://flights.ctrip.com/online/list/oneway-hgh-fco" target="_blank"
+              style="background:white;border-radius:10px;padding:10px;text-align:center;text-decoration:none;color:var(--navy);border:1px solid rgba(33,150,166,0.15);transition:box-shadow 0.2s;"
+              onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+              <div style="font-weight:600;font-size:12px;">携程</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">中文界面·售后便利</div>
+            </a>
+            <a href="https://www.google.com/travel/flights" target="_blank"
+              style="background:white;border-radius:10px;padding:10px;text-align:center;text-decoration:none;color:var(--navy);border:1px solid rgba(33,150,166,0.15);transition:box-shadow 0.2s;"
+              onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+              <div style="font-weight:600;font-size:12px;">Google Flights</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">全球航班搜索</div>
+            </a>
+            <a href="https://www.trip.com/flights/hangzhou-to-rome/tickets-hgh-fco" target="_blank"
+              style="background:white;border-radius:10px;padding:10px;text-align:center;text-decoration:none;color:var(--navy);border:1px solid rgba(33,150,166,0.15);transition:box-shadow 0.2s;"
+              onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.1)'" onmouseout="this.style.boxShadow='none'">
+              <div style="font-weight:600;font-size:12px;">Trip.com</div>
+              <div style="font-size:10px;color:var(--text-muted);margin-top:4px;">国际版携程</div>
+            </a>
+          </div>
+        </div>
+        <div class="chart-box" style="margin-top:20px;">
+          <h4 style="font-size:14px;margin-bottom:12px;">航班价格对比（经济舱均价/人）</h4>
+          <canvas id="flightChart"></canvas>
+        </div>
+      </section>
+
+      <!-- Shanghai Compare -->
+      <section id="shanghai-compare">
+        <h2 class="section-title">🔄 上海出发 vs 杭州出发对比</h2>
+        <p class="section-sub">携程实时数据（2026-02-20更新）· 4月25日去程 / 5月4日回程 · 经济舱/人</p>
+
+        <!-- 核心对比卡片 -->
+        <div class="grid-2" style="margin-bottom:20px;">
+          <div class="card" style="border-color:#2196A6;">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:#2196A6;display:flex;align-items:center;justify-content:center;font-size:18px;">
+                🛫</div>
+              <div><strong style="font-size:15px;">上海浦东 PVG 出发</strong>
+                <div style="font-size:12px;color:var(--text-muted);">64班去程·1个直飞 ｜ 61班回程·2个直飞</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div class="tip-box tip-success" style="margin:0;padding:8px 12px;font-size:12px;">✅
+                有直飞！东航MU787直飞罗马仅<strong>12h45m</strong>，体验最佳</div>
+              <div class="tip-box tip-success" style="margin:0;padding:8px 12px;font-size:12px;">✅ 回程东航MU244直飞米兰→上海
+                <strong>¥4,092起</strong>，性价比极高
+              </div>
+              <div class="tip-box tip-success" style="margin:0;padding:8px 12px;font-size:12px;">✅
+                国际航司选择更多（阿提哈德、卡塔尔、吉祥等）</div>
+              <div class="tip-box tip-warning" style="margin:0;padding:8px 12px;font-size:12px;">⚠️ 去程直飞较贵（MU787
+                ¥8,898），低价中转需经长途</div>
+              <div class="tip-box tip-warning" style="margin:0;padding:8px 12px;font-size:12px;">⚠️
+                需提前约3h到PVG，杭州出发须额外2.5-3.5小时</div>
+            </div>
+          </div>
+          <div class="card" style="border-color:var(--coral);">
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px;">
+              <div
+                style="width:36px;height:36px;border-radius:50%;background:var(--coral);display:flex;align-items:center;justify-content:center;font-size:18px;">
+                🏠</div>
+              <div><strong style="font-size:15px;">杭州萧山 HGH 出发</strong>
+                <div style="font-size:12px;color:var(--text-muted);">家门口出发 · 全部需要中转</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+              <div class="tip-box tip-success" style="margin:0;padding:8px 12px;font-size:12px;">✅ 家门口出发，无需赶路，整体行程压力最小
+              </div>
+              <div class="tip-box tip-success" style="margin:0;padding:8px 12px;font-size:12px;">✅ 回程可选含空巴联运，直接到杭州，免转车
+              </div>
+              <div class="tip-box tip-success" style="margin:0;padding:8px 12px;font-size:12px;">✅ 国航经北京去程价格
+                ¥3,500起（15h50m），性价比也不差</div>
+              <div class="tip-box tip-warning" style="margin:0;padding:8px 12px;font-size:12px;">⚠️ 无直飞，全部需中转，整体飞行时间较长
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 去程对比 -->
+        <h3 style="font-size:15px;margin:20px 0 10px;display:flex;align-items:center;gap:8px;">🛫 去程：4月25日（周六）出发</h3>
+        <div class="grid-2" style="margin-bottom:20px;">
+          <div>
+            <h4 style="font-size:13px;margin-bottom:8px;color:#2196A6;">📍 上海浦东(PVG) → 罗马(FCO) · 携程实时</h4>
+            <table>
+              <tr>
+                <th>航司/航班</th>
+                <th>出发→到达</th>
+                <th>总时长</th>
+                <th>中转</th>
+                <th>经济舱</th>
+              </tr>
+              <tr style="background:#F0FDF4;">
+                <td><strong style="color:#2E7D32;">🟢 东方航空</strong><br><span class="mono" style="font-size:11px;">MU787
+                    A350</span></td>
+                <td class="mono" style="font-size:12px;">12:25→19:10</td>
+                <td style="color:#2E7D32;font-weight:700;">12h45m</td>
+                <td><span class="tag tag-green">直飞</span></td>
+                <td class="mono" style="color:var(--coral);font-weight:700;">¥8,898</td>
+              </tr>
+              <tr>
+                <td><strong>印度航空</strong><br><span class="mono" style="font-size:11px;">AI351+AI123</span></td>
+                <td class="mono" style="font-size:12px;">22:00→次日18:55</td>
+                <td style="font-size:12px;">26h55m</td>
+                <td><span class="tag tag-yellow" style="font-size:10px;">经德里</span></td>
+                <td class="mono" style="color:var(--teal);font-weight:700;">¥2,524</td>
+              </tr>
+              <tr>
+                <td><strong>阿提哈德</strong><br><span class="mono" style="font-size:11px;">EY5748+EY085</span></td>
+                <td class="mono" style="font-size:12px;">15:00→次日06:25</td>
+                <td style="font-size:12px;">21h25m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经阿布扎比</span></td>
+                <td class="mono">¥3,910</td>
+              </tr>
+              <tr>
+                <td><strong>海南航空</strong><br><span class="mono" style="font-size:11px;">HU7722+HU437</span></td>
+                <td class="mono" style="font-size:12px;">11:55→次日08:35</td>
+                <td style="font-size:12px;">26h40m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经深圳</span></td>
+                <td class="mono">¥4,188</td>
+              </tr>
+              <tr>
+                <td><strong>中华航空</strong><br><span class="mono" style="font-size:11px;">CI504+CI075 ⚠️需过境签</span></td>
+                <td class="mono" style="font-size:12px;">19:50→次日07:55</td>
+                <td style="font-size:12px;">18h05m</td>
+                <td><span class="tag tag-red" style="font-size:10px;">经台北</span></td>
+                <td class="mono">¥4,400</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <h4 style="font-size:13px;margin-bottom:8px;color:var(--coral);">📍 杭州(HGH) → 罗马(FCO) · 原方案参考</h4>
+            <table>
+              <tr>
+                <th>航司/航班</th>
+                <th>出发→到达</th>
+                <th>总时长</th>
+                <th>中转</th>
+                <th>经济舱</th>
+              </tr>
+              <tr style="background:#FFF8E1;">
+                <td><strong>中国国航</strong><br><span class="mono" style="font-size:11px;">CA1706+CA939</span></td>
+                <td class="mono" style="font-size:12px;">09:00→17:50</td>
+                <td style="color:#D97706;font-weight:700;">15h50m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经北京</span></td>
+                <td class="mono">¥3,500起</td>
+              </tr>
+              <tr>
+                <td><strong>海南航空</strong><br><span class="mono" style="font-size:11px;">HU7182+HU437</span></td>
+                <td class="mono" style="font-size:12px;">18:35→次日07:45</td>
+                <td style="font-size:12px;">20h10m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经深圳</span></td>
+                <td class="mono">¥3,500起</td>
+              </tr>
+              <tr>
+                <td><strong>阿联酋航空</strong><br><span class="mono" style="font-size:11px;">EK303+EK097</span></td>
+                <td class="mono" style="font-size:12px;">00:10→12:40</td>
+                <td style="font-size:12px;">19h30m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经迪拜</span></td>
+                <td class="mono">¥4,200起</td>
+              </tr>
+              <tr>
+                <td><strong>埃及航空</strong><br><span class="mono" style="font-size:11px;">MS960+MS792</span></td>
+                <td class="mono" style="font-size:12px;">00:05→12:30</td>
+                <td style="font-size:12px;">19h25m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经开罗</span></td>
+                <td class="mono">¥3,800起</td>
+              </tr>
+              <tr>
+                <td><strong>卡塔尔航空</strong><br><span class="mono" style="font-size:11px;">QR891+QR131</span></td>
+                <td class="mono" style="font-size:12px;">23:35→13:30</td>
+                <td style="font-size:12px;">20h55m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经多哈</span></td>
+                <td class="mono">¥4,500起</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- 回程对比 -->
+        <h3 style="font-size:15px;margin:20px 0 10px;display:flex;align-items:center;gap:8px;">🛬 回程：5月4日（周一）出发</h3>
+        <div class="grid-2" style="margin-bottom:20px;">
+          <div>
+            <h4 style="font-size:13px;margin-bottom:8px;color:#2196A6;">📍 米兰(MXP) → 上海浦东(PVG) · 携程实时</h4>
+            <table>
+              <tr>
+                <th>航司/航班</th>
+                <th>出发→到达</th>
+                <th>总时长</th>
+                <th>中转</th>
+                <th>经济舱</th>
+              </tr>
+              <tr style="background:#F0FDF4;">
+                <td><strong style="color:#2E7D32;">🟢 东方航空</strong><br><span class="mono" style="font-size:11px;">MU244
+                    A350</span></td>
+                <td class="mono" style="font-size:12px;">13:10→次日06:55</td>
+                <td style="color:#2E7D32;font-weight:700;">11h45m</td>
+                <td><span class="tag tag-green">直飞</span></td>
+                <td class="mono" style="color:var(--teal);font-weight:700;">¥4,092</td>
+              </tr>
+              <tr style="background:#F0FDF4;">
+                <td><strong style="color:#2E7D32;">🟢 中国国航</strong><br><span class="mono" style="font-size:11px;">CA968
+                    A350</span></td>
+                <td class="mono" style="font-size:12px;">12:15→次日05:50</td>
+                <td style="color:#2E7D32;font-weight:700;">11h35m</td>
+                <td><span class="tag tag-green">直飞</span></td>
+                <td class="mono" style="color:var(--coral);">¥8,676</td>
+              </tr>
+              <tr>
+                <td><strong>吉祥航空</strong><br><span class="mono" style="font-size:11px;">HO1668+HO2072</span></td>
+                <td class="mono" style="font-size:12px;">22:15→次日18:40</td>
+                <td style="font-size:12px;">14h25m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经郑州</span></td>
+                <td class="mono" style="color:var(--teal);font-weight:700;">¥3,206</td>
+              </tr>
+              <tr>
+                <td><strong>海南+布鲁塞尔航</strong><br><span class="mono" style="font-size:11px;">SN3160+HU7922</span></td>
+                <td class="mono" style="font-size:12px;">21:45→后天05:00</td>
+                <td style="font-size:12px;">25h15m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经布鲁塞尔</span></td>
+                <td class="mono">¥3,712</td>
+              </tr>
+              <tr>
+                <td><strong>卡塔尔航空</strong><br><span class="mono" style="font-size:11px;">QR128+QR870</span></td>
+                <td class="mono" style="font-size:12px;">16:00→次日16:20</td>
+                <td style="font-size:12px;">18h20m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经多哈</span></td>
+                <td class="mono">¥4,212</td>
+              </tr>
+            </table>
+          </div>
+          <div>
+            <h4 style="font-size:13px;margin-bottom:8px;color:var(--coral);">📍 米兰(MXP) → 杭州(HGH) · 原方案参考</h4>
+            <table>
+              <tr>
+                <th>航司/航班</th>
+                <th>出发→到达</th>
+                <th>总时长</th>
+                <th>中转</th>
+                <th>经济舱</th>
+              </tr>
+              <tr style="background:#FFF8E1;">
+                <td><strong>中国国航</strong><br><span class="mono" style="font-size:11px;">CA950+CA1705</span></td>
+                <td class="mono" style="font-size:12px;">12:30→次日09:45</td>
+                <td style="color:#D97706;font-weight:700;">14h15m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经北京</span></td>
+                <td class="mono">¥3,500起</td>
+              </tr>
+              <tr>
+                <td><strong>海南航空</strong><br><span class="mono" style="font-size:11px;">HU438+HU7181</span></td>
+                <td class="mono" style="font-size:12px;">09:45→次日09:10</td>
+                <td style="font-size:12px;">16h25m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经深圳</span></td>
+                <td class="mono">¥3,500起</td>
+              </tr>
+              <tr>
+                <td><strong>中国东航</strong><br><span class="mono" style="font-size:11px;">MU788+MU2170</span></td>
+                <td class="mono" style="font-size:12px;">20:30→次日18:40</td>
+                <td style="font-size:12px;">15h10m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经西安</span></td>
+                <td class="mono">¥3,800起</td>
+              </tr>
+              <tr>
+                <td><strong>国泰航空</strong><br><span class="mono" style="font-size:11px;">CX234+CX5602</span></td>
+                <td class="mono" style="font-size:12px;">11:45→次日10:10</td>
+                <td style="font-size:12px;">15h25m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经香港</span></td>
+                <td class="mono">¥4,500起</td>
+              </tr>
+              <tr>
+                <td><strong>阿联酋航空</strong><br><span class="mono" style="font-size:11px;">EK206+EK302</span></td>
+                <td class="mono" style="font-size:12px;">13:55→后天15:30</td>
+                <td style="font-size:12px;">18h35m</td>
+                <td><span class="tag tag-blue" style="font-size:10px;">经迪拜</span></td>
+                <td class="mono">¥4,800起</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <!-- 三种方案推荐 -->
+        <h3 style="font-size:15px;margin:20px 0 10px;">💡 三种方案推荐：哪种适合你？</h3>
+        <div class="grid-3" style="margin-bottom:20px;">
+          <div class="card" style="border-top:4px solid #2E7D32;">
+            <div style="font-size:24px;margin-bottom:8px;">💰</div>
+            <strong style="font-size:14px;">最低价方案</strong>
+            <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.8;">上海出发：去程印度航空经德里 <strong
+                style="color:var(--teal);">¥2,524</strong>（约27h）+ 回程吉祥航空经郑州 <strong
+                style="color:var(--teal);">¥3,206</strong>（14h25m）≈
+              <strong>总价¥5,730起</strong>。飞行时间超长，仅供价格敏感型旅行者参考。再加上PVG交通约¥120，与杭州直飞差异不大。
+            </p>
+          </div>
+          <div class="card" style="border-top:4px solid #2196A6;">
+            <div style="font-size:24px;margin-bottom:8px;">⭐</div>
+            <strong style="font-size:14px;">性价比首选（推荐）</strong>
+            <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.8;">上海出发：去程阿提哈德经阿布扎比 <strong
+                style="color:#2196A6;">¥3,910</strong>（21h25m）+ 回程东航MU244直飞 <strong
+                style="color:#2196A6;">¥4,092</strong>（<strong>仅11h45m！</strong>）≈
+              <strong>总价¥8,002</strong>。回程直飞体验极佳，加上PVG交通约¥120，综合最优。
+            </p>
+          </div>
+          <div class="card" style="border-top:4px solid var(--coral);">
+            <div style="font-size:24px;margin-bottom:8px;">🏡</div>
+            <strong style="font-size:14px;">最省事方案</strong>
+            <p style="font-size:12px;color:var(--text-muted);margin-top:8px;line-height:1.8;">杭州出发：去程国航经北京 <strong
+                style="color:var(--coral);">¥3,500起</strong>（15h50m）+ 回程国航经北京 <strong
+                style="color:var(--coral);">¥3,500起</strong>（14h15m）≈
+              <strong>总价¥7,000起</strong>。家门口出发无需赶路，精力充沛迎接行程，适合有孩子或行李多的家庭。
+            </p>
+          </div>
+        </div>
+
+        <!-- 杭州→PVG 交通指南 -->
+        <h3 style="font-size:15px;margin:20px 0 10px;">🚌 选择上海出发？杭州 → 浦东机场(PVG) 接驳方式</h3>
+        <table style="margin-bottom:12px;">
+          <tr>
+            <th>方式</th>
+            <th>路线</th>
+            <th>时长</th>
+            <th>费用</th>
+            <th>说明</th>
+          </tr>
+          <tr>
+            <td><strong>空巴联运</strong><br><span class="tag tag-green" style="font-size:10px;">强烈推荐</span></td>
+            <td>购票时目的地选"杭州"，含机场大巴</td>
+            <td>约3-3.5h</td>
+            <td class="mono">¥1-50</td>
+            <td style="font-size:12px;">东航/国航均有，行李直接联运，最省心</td>
+          </tr>
+          <tr>
+            <td><strong>长途大巴</strong></td>
+            <td>武林门/杭州东候机楼 → PVG直达</td>
+            <td>约3-3.5h</td>
+            <td class="mono">¥110-120</td>
+            <td style="font-size:12px;">班次固定，无需换乘，行李方便</td>
+          </tr>
+          <tr>
+            <td><strong>高铁+地铁</strong></td>
+            <td>杭州东→上海虹桥（1h）→ 地铁2号线→PVG</td>
+            <td>约2.5-3h</td>
+            <td class="mono">约¥100</td>
+            <td style="font-size:12px;">灵活，但行李多时换乘不便</td>
+          </tr>
+          <tr>
+            <td><strong>打车/专车</strong></td>
+            <td>杭州市区直达PVG</td>
+            <td>约2-2.5h</td>
+            <td class="mono">¥300-400</td>
+            <td style="font-size:12px;">多人分摊最舒适，行程不受班次限制</td>
+          </tr>
+        </table>
+        <div class="tip-box tip-danger">
+          <strong>⚠️ 时间规划提醒！</strong><br>
+          <span style="font-size:13px;">浦东机场国际航班建议提前 <strong>3小时</strong> 到达办理值机。如选东航MU787（12:25起飞），最晚需
+            <strong>上午9:15到达PVG</strong>，即 <strong>杭州最晚6:00前出门</strong>——建议前一晚住上海，或选择凌晨/下午航班。</span>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px;">
+          <a href="https://flights.ctrip.com/online/list/oneway-pvg-fco?depdate=2026-04-25&cabin=Y&adultnum=1"
+            target="_blank" class="btn btn-teal" style="justify-content:center;font-size:12px;">🔍 携程查询 PVG→FCO 去程 ↗</a>
+          <a href="https://flights.ctrip.com/online/list/oneway-mxp-pvg?depdate=2026-05-04&cabin=Y&adultnum=1"
+            target="_blank" class="btn btn-coral" style="justify-content:center;font-size:12px;">🔍 携程查询 MXP→PVG 回程
+            ↗</a>
+        </div>
+      </section>
+
+      <!-- Itinerary -->
+      <section id="itinerary">
+        <h2 class="section-title">每日详细行程</h2>
+        <p class="section-sub">罗马(3天) → 佛罗伦萨(2天) → 威尼斯(2天) → 米兰(2天) → 返程</p>
+        <div class="grid-4" style="margin-bottom:20px;">
+          <div style="background:#E8614D;color:#fff;border-radius:12px;padding:16px;text-align:center;">
+            <div style="font-weight:700;font-size:18px;">罗马</div>
+            <div style="font-size:14px;">3天</div>
+            <div style="font-size:12px;opacity:0.8;">4/25-4/28</div>
+          </div>
+          <div style="background:#D4A017;color:#fff;border-radius:12px;padding:16px;text-align:center;">
+            <div style="font-weight:700;font-size:18px;">佛罗伦萨</div>
+            <div style="font-size:14px;">2天</div>
+            <div style="font-size:12px;opacity:0.8;">4/28-4/30</div>
+          </div>
+          <div style="background:#0277BD;color:#fff;border-radius:12px;padding:16px;text-align:center;">
+            <div style="font-weight:700;font-size:18px;">威尼斯</div>
+            <div style="font-size:14px;">2天</div>
+            <div style="font-size:12px;opacity:0.8;">4/30-5/2</div>
+          </div>
+          <div style="background:#424242;color:#fff;border-radius:12px;padding:16px;text-align:center;">
+            <div style="font-weight:700;font-size:18px;">米兰</div>
+            <div style="font-size:14px;">2天</div>
+            <div style="font-size:12px;opacity:0.8;">5/2-5/4</div>
+          </div>
+        </div>
+        <div id="itinerary-timeline"></div>
+      </section>
+
+      <!-- Trains -->
+      <section id="trains">
+        <h2 class="section-title">城际交通</h2>
+        <p class="section-sub">意大利高速铁路网络发达，城际出行首选火车</p>
+        <table>
+          <tr>
+            <th>路线</th>
+            <th>时长</th>
+            <th>早订价</th>
+            <th>正常价</th>
+            <th>运营商</th>
+          </tr>
+          <tr>
+            <td>罗马 → 佛罗伦萨</td>
+            <td>1.5小时</td>
+            <td class="mono">€14.90起</td>
+            <td class="mono">€25-50</td>
+            <td>Frecciarossa / Italo</td>
+          </tr>
+          <tr>
+            <td>佛罗伦萨 → 比萨</td>
+            <td>1小时</td>
+            <td class="mono">€8-10</td>
+            <td class="mono">€8-10</td>
+            <td>Regionale</td>
+          </tr>
+          <tr>
+            <td>佛罗伦萨 → 威尼斯</td>
+            <td>2小时</td>
+            <td class="mono">€18.90起</td>
+            <td class="mono">€30-55</td>
+            <td>Frecciarossa / Italo</td>
+          </tr>
+          <tr>
+            <td>威尼斯 → 米兰</td>
+            <td>2.5小时</td>
+            <td class="mono">€19起</td>
+            <td class="mono">€35-55</td>
+            <td>Frecciarossa / Italo</td>
+          </tr>
+          <tr>
+            <td>米兰 → 科莫</td>
+            <td>1小时</td>
+            <td class="mono">€5-8</td>
+            <td class="mono">€5-8</td>
+            <td>Trenord</td>
+          </tr>
+        </table>
+        <div class="grid-3" style="margin-top:16px;">
+          <div class="card"><strong>🚄 Trenitalia官网</strong>
+            <p style="font-size:12px;color:var(--text-muted);margin:6px 0;">意大利国铁，Super Economy票最低€14.90起</p><a
+              href="https://www.trenitalia.com" target="_blank" class="btn btn-teal" style="font-size:12px;">访问官网 ↗</a>
+          </div>
+          <div class="card"><strong>🚄 Italo官网</strong>
+            <p style="font-size:12px;color:var(--text-muted);margin:6px 0;">私营高速铁路，价格常比国铁更便宜</p><a
+              href="https://www.italotreno.it" target="_blank" class="btn btn-teal" style="font-size:12px;">访问官网 ↗</a>
+          </div>
+          <div class="card"><strong>🔍 Omio比价</strong>
+            <p style="font-size:12px;color:var(--text-muted);margin:6px 0;">一站式比较多家运营商价格，支持中文</p><a
+              href="https://www.omio.com" target="_blank" class="btn btn-teal" style="font-size:12px;">访问官网 ↗</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hotels -->
+      <section id="hotels">
+        <h2 class="section-title">住宿建议</h2>
+        <p class="section-sub">推荐住宿区域和价格参考</p>
+        <table>
+          <tr>
+            <th>城市</th>
+            <th>晚数</th>
+            <th>推荐区域</th>
+            <th>经济型</th>
+            <th>舒适型</th>
+          </tr>
+          <tr>
+            <td>罗马</td>
+            <td>3晚</td>
+            <td>Termini火车站 / Monti区</td>
+            <td class="mono">¥300-500/晚</td>
+            <td class="mono">¥500-800/晚</td>
+          </tr>
+          <tr>
+            <td>佛罗伦萨</td>
+            <td>2晚</td>
+            <td>Duomo / SMN站附近</td>
+            <td class="mono">¥300-450/晚</td>
+            <td class="mono">¥450-700/晚</td>
+          </tr>
+          <tr>
+            <td>威尼斯</td>
+            <td>2晚</td>
+            <td>Mestre大陆侧 / San Marco</td>
+            <td class="mono">¥350-600/晚</td>
+            <td class="mono">¥600-1000/晚</td>
+          </tr>
+          <tr>
+            <td>米兰</td>
+            <td>2晚</td>
+            <td>Centrale火车站 / Duomo区</td>
+            <td class="mono">¥300-500/晚</td>
+            <td class="mono">¥500-800/晚</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Budget -->
+      <section id="budget">
+        <h2 class="section-title">费用预算</h2>
+        <p class="section-sub">精打细算，畅游意大利</p>
+        <table>
+          <tr>
+            <th>项目</th>
+            <th>经济方案</th>
+            <th>舒适方案</th>
+          </tr>
+          <tr>
+            <td>✈️ 往返机票（开口票）</td>
+            <td class="mono">¥7,000-9,000</td>
+            <td class="mono">¥9,000-11,000</td>
+          </tr>
+          <tr>
+            <td>🏨 住宿（9晚）</td>
+            <td class="mono">¥3,000-4,500</td>
+            <td class="mono">¥5,000-7,500</td>
+          </tr>
+          <tr>
+            <td>🚄 城际火车</td>
+            <td class="mono">¥500-700</td>
+            <td class="mono">¥800-1,200</td>
+          </tr>
+          <tr>
+            <td>🚇 市内交通</td>
+            <td class="mono">¥300-500</td>
+            <td class="mono">¥500-700</td>
+          </tr>
+          <tr>
+            <td>🎫 门票/活动</td>
+            <td class="mono">¥800-1,200</td>
+            <td class="mono">¥1,200-2,000</td>
+          </tr>
+          <tr>
+            <td>🍝 餐饮（10天）</td>
+            <td class="mono">¥1,500-2,500</td>
+            <td class="mono">¥2,500-4,000</td>
+          </tr>
+          <tr>
+            <td>📋 签证+保险</td>
+            <td class="mono">¥922-1,022</td>
+            <td class="mono">¥1,022-1,122</td>
+          </tr>
+          <tr>
+            <td>🛍️ 其他/购物</td>
+            <td class="mono">¥500-1,000</td>
+            <td class="mono">¥1,000-3,000</td>
+          </tr>
+          <tr style="font-weight:700;background:#F0FDF4;">
+            <td>合计（人均）</td>
+            <td class="mono" style="color:var(--teal);">¥14,522-20,422</td>
+            <td class="mono" style="color:var(--coral);">¥21,022-30,522</td>
+          </tr>
+        </table>
+        <div class="grid-2" style="margin-top:16px;">
+          <div class="chart-box">
+            <h4 style="font-size:14px;margin-bottom:12px;">费用构成（经济方案）</h4><canvas id="budgetPieChart"></canvas>
+          </div>
+          <div class="chart-box">
+            <h4 style="font-size:14px;margin-bottom:12px;">经济 vs 舒适方案对比</h4><canvas id="budgetBarChart"></canvas>
+          </div>
+        </div>
+      </section>
+
+      <!-- Saving Tips -->
+      <section id="saving">
+        <h2 class="section-title">省钱攻略</h2>
+        <p class="section-sub">实用省钱技巧，让旅行更经济</p>
+        <div class="grid-2" id="saving-tips"></div>
+      </section>
+
+      <!-- Packing -->
+      <section id="packing">
+        <h2 class="section-title">行李清单</h2>
+        <p class="section-sub">可勾选的行李清单，帮助您不遗漏任何必需品</p>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:16px;">
+          <div class="progress-bar" style="flex:1;">
+            <div class="progress-fill" id="packing-progress-fill" style="width:0%;"></div>
+          </div>
+          <span class="mono" style="font-size:14px;font-weight:700;color:var(--teal);"
+            id="packing-progress-text">0/22</span>
+        </div>
+        <div id="packing-container"></div>
+      </section>
+
+      <!-- Weather -->
+      <section id="weather">
+        <h2 class="section-title">天气参考</h2>
+        <p class="section-sub">4月底至5月初是意大利旅游的黄金季节</p>
+        <div class="grid-4" id="weather-cards"></div>
+        <div class="chart-box" style="margin-top:16px;">
+          <h4 style="font-size:14px;margin-bottom:12px;">各城市气温对比（°C）</h4>
+          <canvas id="weatherChart"></canvas>
+        </div>
+        <div class="tip-box tip-info" style="margin-top:16px;">
+          <strong>👕 穿衣建议</strong><br>
+          <span style="font-size:13px;"><strong>白天（15-25°C）：</strong>T恤/衬衫 + 薄外套，舒适步行鞋。参观教堂需覆盖肩膀和膝盖。<br>
+            <strong>早晚（10-15°C）：</strong>轻薄羽绒服或风衣，威尼斯水边较凉需多穿一层。建议洋葱式穿搭。</span>
+        </div>
+      </section>
+
+      <!-- Emergency -->
+      <section id="emergency">
+        <h2 class="section-title">紧急联系方式</h2>
+        <p class="section-sub">建议出发前保存此页面截图或收藏网页，以备不时之需</p>
+        <div class="tip-box tip-danger" style="margin-bottom:20px;">
+          <strong>🛡️ 安全提示</strong><br>
+          <span style="font-size:13px;">意大利旅游整体安全，但罗马、米兰等大城市需注意防盗。建议使用前胸包或防盗背包，贵重物品不要放在外口袋。护照建议复印一份存放在酒店保险箱中。</span>
+        </div>
+        <div id="emergency-container"></div>
+        <div class="tip-box tip-info" style="margin-top:20px;">
+          <strong>📝 紧急情况处理指南</strong>
+          <div class="grid-2" style="margin-top:12px;">
+            <div style="background:#fff;border-radius:10px;padding:12px;"><strong style="font-size:13px;">护照丢失</strong>
+              <p style="font-size:12px;color:var(--text-muted);margin-top:4px;">
+                立即报警获取报案证明，然后联系最近的中国使领馆申请旅行证。带好护照复印件和证件照片。</p>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:12px;"><strong style="font-size:13px;">财物被盗</strong>
+              <p style="font-size:12px;color:var(--text-muted);margin-top:4px;">拨打113报警，获取报案证明用于保险理赔。立即挂失银行卡，联系保险公司报案。
+              </p>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:12px;"><strong style="font-size:13px;">突发疾病</strong>
+              <p style="font-size:12px;color:var(--text-muted);margin-top:4px;">拨打118叫救护车，或前往最近的Pronto
+                Soccorso（急诊室）。联系保险公司确认医疗费用赔付。</p>
+            </div>
+            <div style="background:#fff;border-radius:10px;padding:12px;"><strong
+                style="font-size:13px;">航班延误/取消</strong>
+              <p style="font-size:12px;color:var(--text-muted);margin-top:4px;">
+                联系航空公司客服处理。根据EU261法规，延误3小时以上可获得补偿。保留所有收据用于索赔。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="flag" style="margin-bottom:12px;"><span class="g"></span><span class="w"></span><span class="r"></span>
+    </div>
+    <p style="font-size:14px;">意大利旅游签证申请指南 & 10天旅行行程规划</p>
+    <p style="font-size:12px;margin-top:6px;opacity:0.7;">杭州出发 · 2026年4月25日 — 5月5日 · 信息整理于2026年2月</p>
+    <p style="font-size:11px;margin-top:8px;opacity:0.5;">价格信息仅供参考，请以实际预订时为准</p>
+  </footer>
+
+  <script>
+    // ===== DATA =====
+    const CHECKLIST = [
+      { id: "form", title: "申根签证申请表", tag: "原件", desc: "用英语或意大利语填写，打印在A3纸上正反面打印。中国公民须用汉字签名。" },
+      { id: "photo", title: "本人近期照片（1张）", tag: "必需", desc: "ICAO标准：4.0cm×3.5cm，近6个月内拍摄，白底彩色。" },
+      { id: "residence", title: "居住证明", tag: "复印件", desc: "户口簿所有页复印件 + 身份证复印件，或居住证复印件。" },
+      { id: "passport", title: "有效护照", tag: "原件", desc: "离开申根区后至少3个月有效期，至少两张空白签证页。" },
+      { id: "flight", title: "往返机票预订单", tag: "复印件", desc: "需显示申请人姓名、出发城市和目的地。建议签证签出后再付款。" },
+      { id: "hotel", title: "住宿证明", tag: "复印件", desc: "涵盖整个申根行程的酒店订单。建议选择可免费取消的平台。" },
+      { id: "itinerary", title: "旅行计划（行程单）", tag: "复印件", desc: "清晰详细的旅行计划，需显示城市和日期。" },
+      { id: "bank", title: "近3个月银行对账单", tag: "原件", desc: "建议余额不少于5万元。流水打印日期距递交日期不超过15天。" },
+      { id: "employment", title: "在职证明信", tag: "原件", desc: "公司信头纸+公章+签字，含公司地址、电话、职务、收入等。" },
+      { id: "license", title: "公司营业执照复印件", tag: "盖章复印件", desc: "学校或政府机构不需要提供。" },
+      { id: "hukou", title: "户口本复印件", tag: "复印件", desc: "所有页的复印件，无需翻译。" },
+      { id: "insurance", title: "旅行医疗保险", tag: "必需", desc: "覆盖整个申根区，保额至少3万欧元。建议前后各多买1-2天。" },
+      { id: "extra", title: "选择性补充文件", tag: "可选", desc: "旅行经历、房产证明等辅助文件。" },
+    ];
+
+    const PROCESS_STEPS = [
+      { step: 1, title: "在线预约", desc: "访问VFS Global官网，注册账号，选择签证类型和签证中心，预约递交时间。建议提前2-3个月预约。" },
+      { step: 2, title: "准备申请材料", desc: "根据材料清单整理全套申请文件，确保每份材料符合规格要求。按顺序排列。" },
+      { step: 3, title: "前往签证中心递交", desc: "按预约时间到达签证中心。审核材料 → 支付费用 → 采集指纹和照片 → 确认护照返还方式。" },
+      { step: 4, title: "等待审核结果", desc: "标准处理时间15个自然日，复杂案例可能延长至45天。可通过VFS Global官网查询状态。" },
+      { step: 5, title: "领取护照", desc: "签证获批后到签证中心自取或等待快递。务必仔细核对签证贴纸上的信息。" },
+    ];
+
+    const JURISDICTIONS = [
+      { name: "北京领区", color: "#1A3A5C", provinces: "北京、天津、黑龙江、吉林、辽宁、山东、河北、河南、湖北、山西、陕西、甘肃、青海、宁夏、西藏、新疆、内蒙古", centers: ["北京", "西安", "沈阳", "武汉", "济南"] },
+      { name: "上海领区", color: "#2196A6", provinces: "上海、江苏、浙江、安徽", centers: ["上海", "杭州", "南京"] },
+      { name: "广州领区", color: "#E8614D", provinces: "广东、广西、福建、海南、湖南", centers: ["广州", "深圳", "长沙", "福州"] },
+      { name: "重庆领区", color: "#7B5EA7", provinces: "四川、重庆、云南、贵州", centers: ["重庆", "成都", "昆明"] },
+    ];
+
+    const SCHEDULE = [
+      { date: "2025年11月初", event: "最早可申请日", note: "出发前180天" },
+      { date: "2026年2月中旬", event: "建议开始准备材料", note: "预留充足时间" },
+      { date: "2026年3月初", event: "建议递交申请", note: "距出发约2个月" },
+      { date: "2026年3月中下旬", event: "预计获得签证", note: "标准15个自然日" },
+      { date: "2026年4月", event: "购买机票/确认行程", note: "签证获批后操作" },
+      { date: "2026年5月1日", event: "出发！", note: "开启意大利之旅" },
+    ];
+
+    const TIPS_DATA = [
+      { type: "danger", icon: "⚠️", title: "申请表打印要求", text: "签证申请表必须打印在一张A3纸上，正反面打印。" },
+      { type: "danger", icon: "⚠️", title: "护照有效期", text: "护照在预计离开申根区日期后至少有3个月有效期，且签发时间不超过10年。" },
+      { type: "warning", icon: "💡", title: "保险购买建议", text: "旅行医疗保险必须覆盖整个申根区，保额至少3万欧元。建议前后各多买1-2天。" },
+      { type: "warning", icon: "💡", title: "酒店预订技巧", text: "建议选择Booking.com等可免费取消的平台预订酒店。签证获批后再确认最终预订。" },
+      { type: "info", icon: "📌", title: "银行流水要求", text: "银行流水打印日期距递交日期不得超过15天。建议余额不少于5万元。" },
+      { type: "info", icon: "📌", title: "机票预订建议", text: "建议在签证签出后再购买正式机票。申请时只需提供机票预订单即可。" },
+      { type: "warning", icon: "💡", title: "在职证明要点", text: "必须使用公司正式信头纸，加盖公章并签字。" },
+      { type: "info", icon: "📌", title: "支付方式", text: "签证中心支持微信、支付宝、信用卡/储蓄卡和现金支付。费用一旦提交不可退款。" },
+    ];
+
+    const SPECIAL_PEOPLE = [
+      { icon: "🎓", title: "学生", desc: "学校证明信 + 学生证。可提供父母银行对账单 + 亲属关系公证。" },
+      { icon: "🏖️", title: "退休人员", desc: "退休证明或其他固定收入证明，替代在职证明和营业执照。" },
+      { icon: "💻", title: "自由职业者", desc: "需提供合同、纳税证明、收入流水等文件。" },
+      { icon: "🏠", title: "未就业成年人", desc: "已婚：配偶工作证明 + 经济收入证明 + 结婚公证书。" },
+      { icon: "👶", title: "未成年人", desc: "学生证 + 学校证明信 + 亲属关系公证书。单独旅行需出行同意书。" },
+    ];
+
+    const OUTBOUND_FLIGHTS = [
+      { airline: "中国国际航空", route: "杭州HGH → 北京PEK（中转）→ 罗马FCO", stops: 1, duration: "15小时50分", price: "¥3,500 - ¥5,000", avg: 4250, highlight: "用时最短·经北京中转", url: "https://www.airchina.com.cn", stopover: "北京首都PEK", stopoverDur: "2小时10分", weekdays: "周六可飞", legs: [{ no: "CA1706", from: "杭州HGH", fromTime: "09:00", to: "北京PEK", toTime: "13:25", plane: "A321" }, { no: "CA939", from: "北京PEK", fromTime: "11:15", to: "罗马FCO", toTime: "17:50", plane: "A77W" }], note: "4月25日周六可飞，当天17:50抵达罗马" },
+      { airline: "海南航空", route: "杭州HGH → 深圳SZX（中转）→ 罗马FCO", stops: 1, duration: "20小时10分", price: "¥3,500 - ¥4,500", avg: 4000, highlight: "最便宜·天巡往返¥3,639起", url: "https://www.hainanairlines.com", stopover: "深圳宝安SZX", stopoverDur: "4小时40分", weekdays: "周一/三/六", legs: [{ no: "HU7182", from: "杭州HGH", fromTime: "18:35", to: "深圳SZX", toTime: "次日01:45", plane: "B738" }, { no: "HU437", from: "深圳SZX", fromTime: "21:05", to: "罗马FCO", toTime: "次日07:45", plane: "B789" }], note: "4月25日周六可飞，次日07:45抵达罗马" },
+      { airline: "阿联酋航空", route: "杭州HGH → 迪拜DXB（中转）→ 罗马FCO", stops: 1, duration: "19小时30分", price: "¥4,200 - ¥5,500", avg: 4850, highlight: "五星服务·每天都飞", url: "https://www.emirates.com/cn/chinese/", stopover: "迪拜DXB", stopoverDur: "2小时45分", weekdays: "每天", legs: [{ no: "EK303", from: "杭州HGH", fromTime: "00:10", to: "迪拜DXB", toTime: "08:55", plane: "B77L" }, { no: "EK097", from: "迪拜DXB", fromTime: "06:10", to: "罗马FCO", toTime: "12:40", plane: "A388" }], note: "4月25日凌晨出发，当天12:40抵达罗马" },
+      { airline: "卡塔尔航空", route: "杭州HGH → 多哈DOH（中转）→ 罗马FCO", stops: 1, duration: "20小时55分", price: "¥4,500 - ¥6,500", avg: 5500, url: "https://www.qatarairways.com/zh-cn/", stopover: "多哈DOH", stopoverDur: "4小时15分", weekdays: "周二/三/五/日", legs: [{ no: "QR891", from: "杭州HGH", fromTime: "23:35", to: "多哈DOH", toTime: "次日09:35", plane: "A359" }, { no: "QR131", from: "多哈DOH", fromTime: "05:20", to: "罗马FCO", toTime: "13:30", plane: "A359" }], note: "4月25日周六不飞，可选4月24日周五23:35出发" },
+      { airline: "埃及航空", route: "杭州HGH → 开罗CAI（中转）→ 罗马FCO", stops: 1, duration: "19小时25分", price: "¥3,800 - ¥5,000", avg: 4400, url: "https://www.egyptair.com", stopover: "开罗CAI", stopoverDur: "4小时25分", weekdays: "周二/四/六", legs: [{ no: "MS960", from: "杭州HGH", fromTime: "00:05", to: "开罗CAI", toTime: "10:00", plane: "B789" }, { no: "MS792", from: "开罗CAI", fromTime: "05:35", to: "罗马FCO", toTime: "12:30", plane: "B738" }], note: "4月25日周六可飞，当天12:30抵达罗马" },
+    ];
+
+    const RETURN_FLIGHTS = [
+      { airline: "中国国际航空", route: "米兰MXP → 北京PEK（中转）→ 杭州HGH", stops: 1, duration: "14小时15分", price: "¥3,500 - ¥5,000", avg: 4250, highlight: "最快·经北京中转", url: "https://www.airchina.com.cn", stopover: "北京PEK", stopoverDur: "2小时", weekdays: "每天（周五除外）", legs: [{ no: "CA950", from: "米兰MXP", fromTime: "12:30", to: "北京PEK", toTime: "次日07:30", plane: "A359" }, { no: "CA1705", from: "北京PEK", fromTime: "05:30", to: "杭州HGH", toTime: "09:45", plane: "A787" }], note: "5月4日周一可飞，5月5日09:45抵达杭州" },
+      { airline: "国泰航空", route: "米兰MXP → 香港HKG（中转）→ 杭州HGH", stops: 1, duration: "15小时25分", price: "¥4,500 - ¥8,000", avg: 6250, url: "https://www.cathaypacific.com", stopover: "香港HKG", stopoverDur: "1小时25分", weekdays: "每天", legs: [{ no: "CX234", from: "米兰MXP", fromTime: "11:45", to: "香港HKG", toTime: "次日07:50", plane: "B77W" }, { no: "CX5602", from: "香港HKG", fromTime: "06:25", to: "杭州HGH", toTime: "10:10", plane: "B32Q" }], note: "5月4日周一可飞，5月5日10:10抵达杭州" },
+      { airline: "海南航空", route: "米兰MXP → 深圳SZX（中转）→ 杭州HGH", stops: 1, duration: "16小时25分", price: "¥3,500 - ¥4,500", avg: 4000, highlight: "最便宜", url: "https://www.hainanairlines.com", stopover: "深圳SZX", stopoverDur: "2小时40分", weekdays: "周一/三/六", legs: [{ no: "HU438", from: "米兰MXP", fromTime: "09:45", to: "深圳SZX", toTime: "次日07:10", plane: "B789" }, { no: "HU7181", from: "深圳SZX", fromTime: "04:30", to: "杭州HGH", toTime: "09:10", plane: "B738" }], note: "5月4日周一可飞，5月5日09:10抵达杭州" },
+      { airline: "中国东方航空", route: "米兰MXP → 西安XIY（中转）→ 杭州HGH", stops: 1, duration: "15小时10分", price: "¥3,800 - ¥5,500", avg: 4650, url: "https://www.ceair.com", stopover: "西安XIY", stopoverDur: "2小时40分", weekdays: "周二/四/日", legs: [{ no: "MU788", from: "米兰MXP", fromTime: "20:30", to: "西安XIY", toTime: "次日16:25", plane: "A332" }, { no: "MU2170", from: "西安XIY", fromTime: "13:45", to: "杭州HGH", toTime: "18:40", plane: "A321" }], note: "5月4日周一不飞，可选5月3日周日20:30出发" },
+      { airline: "阿联酋航空", route: "米兰MXP → 迪拜DXB（中转）→ 杭州HGH", stops: 1, duration: "18小时35分", price: "¥4,800 - ¥5,800", avg: 5300, url: "https://www.emirates.com/cn/chinese/", stopover: "迪拜DXB", stopoverDur: "4小时45分", weekdays: "每天", legs: [{ no: "EK206", from: "米兰MXP", fromTime: "13:55", to: "迪拜DXB", toTime: "次日03:45", plane: "A388" }, { no: "EK302", from: "迪拜DXB", fromTime: "23:00", to: "杭州HGH", toTime: "次日15:30", plane: "A77L" }], note: "5月4日周一可飞，5月5日15:30抵达杭州" },
+    ];
+
+    const DAILY_PLANS = [
+      { day: 1, date: "4月25日", weekday: "周六", city: "罗马", title: "抵达罗马 · 初遇永恒之城", icon: "✈️", color: "#1A3A5C", weather: "14°-22°C 晴到多云", clothing: "T恤+薄外套", morning: "从杭州出发，搭乘经济舱航班前往罗马", afternoon: "抵达罗马FCO机场，乘Leonardo Express至Termini站（€14）", evening: "入住酒店，傍晚步行至特雷维喷泉和纳沃纳广场", tips: "建议购买Roma Pass（€32/48小时），含2个景点+公交", highlights: ["特雷维喷泉", "纳沃纳广场"], attractions: [{ name: "特雷维喷泉（许愿池）", img: "1584999872814-569a6b02a2b4", desc: "罗马最著名的巴洛克喷泉，高26米。传说背对喷泉投硬币可重返罗马。", ticket: "免费", hours: "全天开放", tips: "建议晚上8点后前往" }, { name: "纳沃纳广场", img: "1592881867427-6b07a9386bf2", desc: "罗马最美的巴洛克广场，有贝尼尼设计的四河喷泉。", ticket: "免费", hours: "全天开放", tips: "周边餐厅价格偏高，到附近小巷用餐" }] },
+      { day: 2, date: "4月26日", weekday: "周日", city: "罗马", title: "古罗马精华 · 千年遗迹", icon: "🏛️", color: "#E8614D", weather: "13°-23°C 晴天", clothing: "短袖+防晒帽", morning: "斗兽场 + 古罗马广场（€16-18）", afternoon: "帕拉蒂尼山 → 卡比托利欧山 → 威尼斯广场", evening: "特拉斯提弗列区晚餐，品尝Carbonara和Cacio e Pepe", tips: "斗兽场门票建议提前2-3周在官网预订", highlights: ["斗兽场", "古罗马广场", "威尼斯广场"], attractions: [{ name: "罗马斗兽场", img: "1552832230-c0197dd311b5", desc: "世界新七大奇迹之一，建于公元72-80年，可容纳5-8万观众。", ticket: "€16-18", hours: "9:00-19:15", url: "https://www.coopculture.it/en/colosseo-e-shop.cfm", tips: "建议购买Full Experience票€22" }, { name: "古罗马广场", img: "1592881867427-6b07a9386bf2", desc: "古罗马帝国的政治、宗教和商业中心。", ticket: "含斗兽场联票", hours: "9:00-19:15", url: "https://www.coopculture.it/en/colosseo-e-shop.cfm" }, { name: "威尼斯广场（维托里亚诺纪念堂）", img: "1552832230-c0197dd311b5", desc: "白色大理石纪念堂，顶层可360度俯瞰罗马。", ticket: "免费，登顶€12", hours: "9:30-19:30" }] },
+      { day: 3, date: "4月27日", weekday: "周一", city: "罗马", title: "梵蒂冈 · 艺术殿堂", icon: "⛪", color: "#7B5EA7", weather: "12°-21°C 多云转晴", clothing: "长裤+有袖上衣", morning: "梵蒂冈博物馆 + 西斯廷教堂（€17，提前预约）", afternoon: "圣彼得大教堂（免费）+ 登穹顶（€8-10）→ 圣天使堡", evening: "西班牙台阶 → Via Condotti → 万神殿夜景", tips: "梵蒂冈博物馆建议提前1个月在官网预约", highlights: ["梵蒂冈博物馆", "西斯廷教堂", "圣彼得大教堂"], attractions: [{ name: "梵蒂冈博物馆", img: "1515542622106-078bda9e2b7a", desc: "世界最重要的博物馆之一，馆藏超过7万件展品。", ticket: "€17", hours: "周一至周六 8:00-19:00", url: "https://tickets.museivaticani.va/home", tips: "强烈建议提前1个月预约" }, { name: "西斯廷教堂", img: "1614354987493-a010f414d0d1", desc: "米开朗基罗的《创世纪》和《最后的审判》所在地。", ticket: "含博物馆门票", hours: "随博物馆", tips: "教堂内严禁拍照" }, { name: "圣彼得大教堂", img: "1552832230-c0197dd311b5", desc: "世界最大的天主教堂，有米开朗基罗的《圣殇》。", ticket: "教堂免费，穹顶€8-10", hours: "7:00-19:00", url: "https://www.cupola.com/en" }, { name: "万神殿", img: "1614354987493-a010f414d0d1", desc: "建于公元125年，拥有世界最大的无钢筋混凝土穹顶。", ticket: "€5", hours: "周一至周六 9:00-19:00", url: "https://www.pantheonroma.com/en/tickets" }] },
+      { day: 4, date: "4月28日", weekday: "周二", city: "佛罗伦萨", title: "文艺复兴之都 · 翡冷翠", icon: "🎨", color: "#D4A017", weather: "11°-21°C 晴朗", clothing: "衬衫+薄外套", transport: "罗马→佛罗伦萨 高速火车1.5小时", morning: "乘高速火车前往佛罗伦萨（€15-30）", afternoon: "圣母百花大教堂 + 登穹顶（€30）→ 乔托钟楼", evening: "老桥漫步 → 米开朗基罗广场看日落", tips: "穹顶攀登463级台阶，需提前在官网预约", highlights: ["圣母百花大教堂", "老桥", "米开朗基罗广场"], attractions: [{ name: "圣母百花大教堂", img: "1590673452623-cf094b5e08f9", desc: "佛罗伦萨标志性建筑，世界第三大穹顶。", ticket: "教堂免费，套票€30", hours: "穹顶8:15-19:00", url: "https://duomo.firenze.it/en/activities-and-tickets", tips: "穹顶需提前在官网预约" }, { name: "老桥（Ponte Vecchio）", img: "1579964571750-d2dc09aec751", desc: "佛罗伦萨最古老的桥梁，桥上有金银珠宝店。", ticket: "免费", hours: "全天开放" }, { name: "米开朗基罗广场", img: "1590673452623-cf094b5e08f9", desc: "俯瞰佛罗伦萨全景的最佳地点。", ticket: "免费", hours: "全天开放", tips: "日落前1小时到达" }] },
+      { day: 5, date: "4月29日", weekday: "周三", city: "佛罗伦萨", title: "艺术巡礼 · 比萨斜塔", icon: "🖼️", color: "#2E7D32", weather: "10°-22°C 晴天", clothing: "T恤+薄外套", morning: "乌菲兹美术馆（€20-25，提前预约）", afternoon: "半日游比萨斜塔（火车1小时，登塔€18）", evening: "中央市场品尝佛罗伦萨牛排", tips: "乌菲兹建议预留3小时参观", highlights: ["乌菲兹美术馆", "比萨斜塔", "中央市场"], attractions: [{ name: "乌菲兹美术馆", img: "1590673452623-cf094b5e08f9", desc: "收藏波提切利《维纳斯的诞生》、达芬奇《天使报喜》等杰作。", ticket: "€20-25", hours: "周二至周日 8:15-18:30", url: "https://www.uffizi.it/en/tickets" }, { name: "比萨斜塔", img: "1714968701588-3783224960e2", desc: "世界著名建筑奇观，倾斜约3.97度，高56米。", ticket: "登塔€18", hours: "9:00-20:00", url: "https://www.opapisa.it/en/tickets", tips: "每批仅限30人" }] },
+      { day: 6, date: "4月30日", weekday: "周四", city: "威尼斯", title: "水城威尼斯 · 浪漫水都", icon: "🚢", color: "#0277BD", weather: "12°-19°C 湿润温和", clothing: "长裤+外套", transport: "佛罗伦萨→威尼斯 高速火车2小时", morning: "乘高速火车前往威尼斯（€19-35）", afternoon: "圣马可广场 + 圣马可大教堂 + 钟楼（€10）→ 总督宫（€25）", evening: "里亚托桥 → 大运河漫步 → 海鲜晚餐", tips: "5月1日是劳动节，部分景点可能调整时间", highlights: ["圣马可广场", "里亚托桥", "大运河"], attractions: [{ name: "圣马可广场", img: "1544520036-c861d7044da2", desc: "被拿破仑誉为'欧洲最美的客厅'。", ticket: "免费", hours: "全天开放" }, { name: "总督宫", img: "1544520036-c861d7044da2", desc: "威尼斯共和国总督官邸，有丁托列托的巨幅《天堂》。", ticket: "€25", hours: "9:00-18:00", url: "https://palazzoducale.visitmuve.it/en/tickets/" }, { name: "里亚托桥", img: "1636297504237-84f4e8489a68", desc: "大运河上最古老、最著名的桥梁。", ticket: "免费", hours: "全天开放" }] },
+      { day: 7, date: "5月1日", weekday: "周五", city: "威尼斯", title: "离岛探秘 · 彩色之旅", icon: "🌈", color: "#F5C842", weather: "11°-18°C 多云", clothing: "外套+围巾", morning: "贡多拉体验（€80-100/船，可拼船）", afternoon: "玻璃岛Murano → 彩色岛Burano", evening: "Cannaregio区晚餐（比圣马可区便宜30%）", tips: "⚠️ 5月1日是劳动节，部分景点可能关闭", highlights: ["贡多拉", "玻璃岛", "彩色岛"], attractions: [{ name: "贡多拉体验", img: "1584211022290-ee43ea4955ac", desc: "威尼斯最具标志性的体验，穿梭于狭窄运河之间。", ticket: "€80/船（30分钟）", hours: "9:00-19:00" }, { name: "玻璃岛（Murano）", img: "1544520036-c861d7044da2", desc: "以玻璃制造闻名，可免费观看玻璃吹制表演。", ticket: "岛上免费，博物馆€10", hours: "博物馆10:00-18:00" }, { name: "彩色岛（Burano）", img: "1748589329713-8881668a0dad", desc: "色彩斑斓的房屋构成童话般街景。", ticket: "岛上免费", hours: "全天开放" }] },
+      { day: 8, date: "5月2日", weekday: "周六", city: "米兰", title: "时尚之都 · 米兰", icon: "👗", color: "#424242", weather: "11°-20°C 晴到多云", clothing: "衬衫+薄外套", transport: "威尼斯→米兰 高速火车2.5小时", morning: "乘高速火车前往米兰（€19-35）", afternoon: "米兰大教堂（€5入内/€14-16登顶）→ 埃马努埃莱二世拱廊", evening: "Navigli运河区晚餐 + 酒吧街", tips: "米兰大教堂登顶建议选择电梯（€16）", highlights: ["米兰大教堂", "埃马努埃莱二世拱廊", "Navigli运河区"], attractions: [{ name: "米兰大教堂", img: "1520440229-6469a149ac59", desc: "世界第二大天主教堂，建造历时近600年。", ticket: "教堂€5，屋顶€14-16", hours: "9:00-19:00", url: "https://www.duomomilano.it/en/tickets/" }, { name: "埃马努埃莱二世拱廊", img: "1520440229-6469a149ac59", desc: "意大利最古老的购物中心，'米兰的客厅'。", ticket: "免费", hours: "全天开放" }, { name: "Navigli运河区", img: "1584211022290-ee43ea4955ac", desc: "米兰最有活力的夜生活区，Aperitivo传统。", ticket: "免费", hours: "餐厅酒吧约18:00-次日2:00", tips: "点一杯酒（€8-12）即可享用自助小食" }] },
+      { day: 9, date: "5月3日", weekday: "周日", city: "科莫湖", title: "科莫湖 · 湖光山色", icon: "⛰️", color: "#00695C", weather: "10°-19°C 湖区微凉", clothing: "外套+长裤", morning: "从米兰乘火车前往科莫（1小时，€5-8）", afternoon: "Bellagio小镇 + 湖上游船（€10-15）", evening: "返回米兰，Brera区告别晚餐", tips: "科莫湖游船班次较少，建议提前查看时刻表", highlights: ["科莫湖", "Bellagio小镇", "湖上游船"], attractions: [{ name: "科莫湖", img: "1640792834957-f8be02983f6b", desc: "意大利第三大湖泊，被阿尔卑斯山环绕。", ticket: "免费", hours: "全天" }, { name: "Bellagio小镇", img: "1640792834957-f8be02983f6b", desc: "'科莫湖的明珠'，鹅卵石小巷和湖畔餐厅。", ticket: "免费，Villa Melzi花园€8", hours: "花园9:30-18:30" }, { name: "Villa del Balbianello", img: "1640792834957-f8be02983f6b", desc: "《星球大战》和《007》取景地。", ticket: "花园€10，含别墅€20", hours: "周二至周日10:00-18:00", url: "https://www.fondoambiente.it/en/places/villa-del-balbianello" }] },
+      { day: 10, date: "5月4日", weekday: "周一", city: "米兰 → 杭州", title: "告别意大利 · 返程", icon: "🏠", color: "#1A3A5C", weather: "10°-20°C 晴天", clothing: "舒适旅行装", morning: "参观《最后的晚餐》（€15，需提前2-3个月预约）", afternoon: "前往MXP机场，乘Malpensa Express（€13）", evening: "搭乘回程航班", tips: "《最后的晚餐》每次仅25人入场15分钟，务必提前预约", highlights: ["最后的晚餐", "米兰购物"], attractions: [{ name: "《最后的晚餐》", img: "1520440229-6469a149ac59", desc: "达芬奇最著名的壁画，每次仅25人入场15分钟。", ticket: "€15+€2预约费", hours: "周二至周日8:15-18:45", url: "https://cenacolovinciano.org/en/tickets/", tips: "提前2-3个月预约" }] },
+      { day: 11, date: "5月5日", weekday: "周二", city: "杭州", title: "抵达杭州", icon: "🎉", color: "#2196A6", weather: "16°-26°C 温暖", clothing: "春夏装", morning: "白天抵达杭州萧山国际机场", afternoon: "回家休息", evening: "结束美好的意大利之旅", tips: "建议预留一天休息调整时差", highlights: ["回到杭州"], attractions: [] },
+    ];
+
+    const SAVING_TIPS_DATA = [
+      { icon: "✈️", title: "机票省钱", tips: ["海南航空转机航班，往返约7,000-9,000元（天巡显示¥5,637起）", "使用开口票避免折返", "提前2-3个月预订，关注促销", "用天巡/携程比价找最低价"] },
+      { icon: "🚄", title: "火车省钱", tips: ["提前在Trenitalia或Italo购买Super Economy票", "早订可省50%以上", "考虑Eurail通票"] },
+      { icon: "🏨", title: "住宿省钱", tips: ["威尼斯住Mestre可省30-50%", "选择Airbnb或青年旅舍", "提前预订可免费取消的酒店"] },
+      { icon: "🎫", title: "门票省钱", tips: ["购买Roma Pass（€32/48小时）", "佛罗伦萨Card含多个博物馆", "许多教堂免费参观"] },
+      { icon: "🍝", title: "餐饮省钱", tips: ["午餐选panini/pizza（€5-8）", "晚餐选当地小餐馆", "超市购买水和零食"] },
+      { icon: "🛍️", title: "购物退税", tips: ["购物满€154.95可退税约12%", "机场退税需预留额外时间", "Outlet折扣力度更大"] },
+    ];
+
+    const PACKING = [
+      { title: "证件文件", items: ["护照（有效期>6个月）", "签证", "机票行程单打印件", "酒店预订确认单", "旅行保险单", "身份证", "2寸照片2张（备用）"] },
+      { title: "电子设备", items: ["手机+充电器", "充电宝（≤20000mAh）", "欧标转换插头（圆孔两脚）", "相机/自拍杆", "耳机"] },
+      { title: "衣物鞋帽", items: ["舒适步行鞋", "轻薄外套", "防晒帽/墨镜", "正装一套", "雨伞/轻便雨衣"] },
+      { title: "日用品", items: ["防晒霜（SPF50+）", "常用药品", "洗漱用品", "纸巾/湿巾", "小背包/斜挎包（防盗）"] },
+    ];
+
+    const WEATHER = [
+      { city: "罗马", high: 22, low: 12, desc: "温暖宜人，偶有阵雨" },
+      { city: "佛罗伦萨", high: 21, low: 10, desc: "春意盎然，早晚偏凉" },
+      { city: "威尼斯", high: 19, low: 11, desc: "湿润温和，注意潮汐" },
+      { city: "米兰", high: 20, low: 10, desc: "春季多变，备好外套" },
+    ];
+
+    const EMERGENCY = [
+      { category: "中国驻意大利使领馆", icon: "🇨🇳", items: [{ name: "中国驻意大利大使馆（罗马）", number: "+39-06-96524200", note: "领事保护热线" }, { name: "中国驻米兰总领事馆", number: "+39-02-58101541", note: "领事保护热线" }, { name: "中国驻佛罗伦萨总领事馆", number: "+39-055-5520672", note: "领事保护热线" }, { name: "外交部全球领事保护热线", number: "+86-10-12308", note: "24小时" }] },
+      { category: "意大利紧急电话", icon: "🚨", items: [{ name: "欧洲统一紧急号码", number: "112", note: "警察/消防/急救" }, { name: "警察（Polizia）", number: "113", note: "治安事件、盗窃报案" }, { name: "急救（Ambulanza）", number: "118", note: "医疗急救" }, { name: "消防", number: "115", note: "火灾等紧急情况" }] },
+      { category: "实用服务电话", icon: "📞", items: [{ name: "意大利旅游警察", number: "+39-06-46861", note: "专门协助游客" }, { name: "信用卡挂失（Visa）", number: "+1-303-9671096", note: "全球24小时" }, { name: "信用卡挂失（Mastercard）", number: "+1-636-7227111", note: "全球24小时" }, { name: "信用卡挂失（银联）", number: "+86-10-95516", note: "全球24小时" }] },
+    ];
+
+    // ===== RENDER FUNCTIONS =====
+    function switchPage(page) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById('page-' + page).classList.add('active');
+      document.querySelectorAll('.page-switch .btn').forEach(b => b.classList.remove('active-page'));
+      document.getElementById('btn-' + page).classList.add('active-page');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToSection(id) {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateCountdown() {
+      const target = new Date('2026-04-25T00:00:00+08:00');
+      const now = new Date();
+      const diff = target - now;
+      if (diff <= 0) { document.getElementById('countdown').innerHTML = '<div style="font-size:18px;font-weight:700;">已出发！</div>'; return; }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor((diff % 86400000) / 3600000);
+      const m = Math.floor((diff % 3600000) / 60000);
+      const s = Math.floor((diff % 60000) / 1000);
+      document.getElementById('countdown').innerHTML = `
+    <div class="countdown-item"><div class="countdown-num">${d}</div><div class="countdown-label">天</div></div>
+    <div class="countdown-item"><div class="countdown-num">${String(h).padStart(2, '0')}</div><div class="countdown-label">时</div></div>
+    <div class="countdown-item"><div class="countdown-num">${String(m).padStart(2, '0')}</div><div class="countdown-label">分</div></div>
+    <div class="countdown-item"><div class="countdown-num">${String(s).padStart(2, '0')}</div><div class="countdown-label">秒</div></div>`;
+    }
+
+    function renderChecklist() {
+      const saved = JSON.parse(localStorage.getItem('visa-checklist') || '{}');
+      const container = document.getElementById('checklist-container');
+      container.innerHTML = CHECKLIST.map(item => {
+        const checked = saved[item.id] ? 'checked' : '';
+        const tagClass = item.tag === '原件' ? 'tag-red' : item.tag === '必需' ? 'tag-blue' : item.tag === '盖章复印件' ? 'tag-yellow' : item.tag === '可选' ? 'tag-gray' : 'tag-green';
+        return `<div class="checklist-item ${checked}" onclick="toggleCheck('${item.id}')">
+      <div class="check-box"></div>
+      <div style="flex:1;"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;"><strong style="font-size:14px;">${item.title}</strong><span class="tag ${tagClass}">${item.tag}</span></div><p style="font-size:12px;color:var(--text-muted);margin:0;">${item.desc}</p></div>
+    </div>`;
+      }).join('');
+      updateProgress();
+    }
+
+    function toggleCheck(id) {
+      const saved = JSON.parse(localStorage.getItem('visa-checklist') || '{}');
+      saved[id] = !saved[id];
+      localStorage.setItem('visa-checklist', JSON.stringify(saved));
+      renderChecklist();
+    }
+
+    function updateProgress() {
+      const saved = JSON.parse(localStorage.getItem('visa-checklist') || '{}');
+      const total = CHECKLIST.length;
+      const checked = Object.values(saved).filter(Boolean).length;
+      document.getElementById('progress-fill').style.width = (checked / total * 100) + '%';
+      document.getElementById('progress-text').textContent = checked + '/' + total;
+    }
+
+    function renderProcess() {
+      const colors = ['#1A3A5C', '#2196A6', '#F5C842', '#E8614D', '#7B5EA7'];
+      document.getElementById('process-timeline').innerHTML = PROCESS_STEPS.map((s, i) => `
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:${colors[i]};">${s.step}</div>
+      <div style="flex:1;margin-bottom:16px;">
+        <div class="card"><strong style="font-size:15px;">${s.title}</strong><p style="font-size:13px;color:var(--text-muted);margin-top:6px;">${s.desc}</p></div>
+      </div>
+    </div>`).join('');
+    }
+
+    function renderJurisdictions() {
+      document.getElementById('jurisdiction-cards').innerHTML = JURISDICTIONS.map(j => `
+    <div class="card">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;">
+        <div style="width:12px;height:12px;border-radius:50%;background:${j.color};"></div>
+        <strong style="font-size:15px;">${j.name}</strong>
+      </div>
+      <p style="font-size:13px;color:var(--text-muted);margin-bottom:10px;">${j.provinces}</p>
+      <div style="display:flex;flex-wrap:wrap;gap:6px;">${j.centers.map(c => `<span class="tag" style="background:${j.color}15;color:${j.color};">${c}</span>`).join('')}</div>
+    </div>`).join('');
+    }
+
+    function renderSchedule() {
+      const icons = ['📅', '📝', '📬', '✅', '✈️', '🎉'];
+      document.getElementById('schedule-timeline').innerHTML = SCHEDULE.map((s, i) => `
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:${i === SCHEDULE.length - 1 ? '#E8614D' : '#2196A6'};">${icons[i]}</div>
+      <div style="flex:1;margin-bottom:8px;">
+        <div class="card"><div style="display:flex;justify-content:space-between;align-items:center;"><strong style="font-size:14px;">${s.event}</strong><span class="mono" style="font-size:12px;color:var(--text-muted);">${s.date}</span></div><p style="font-size:12px;color:var(--text-muted);margin-top:4px;">${s.note}</p></div>
+      </div>
+    </div>`).join('');
+    }
+
+    function renderTips() {
+      document.getElementById('tips-container').innerHTML = TIPS_DATA.map(t => `
+    <div class="tip-box tip-${t.type}"><strong>${t.icon} ${t.title}</strong><br><span style="font-size:13px;">${t.text}</span></div>`).join('');
+      document.getElementById('special-people').innerHTML = SPECIAL_PEOPLE.map(s => `
+    <div class="card" style="text-align:center;"><div style="font-size:28px;margin-bottom:6px;">${s.icon}</div><strong style="font-size:14px;">${s.title}</strong><p style="font-size:12px;color:var(--text-muted);margin-top:6px;">${s.desc}</p></div>`).join('');
+    }
+
+    function renderFlights() {
+      let flightIdCounter = 0;
+      function flightCard(f) {
+        const fid = 'flight-detail-' + (flightIdCounter++);
+        const legsHtml = f.legs ? f.legs.map((leg, i) => `
+      <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:${i < f.legs.length - 1 ? '8' : '0'}px;">
+        <div style="display:flex;flex-direction:column;align-items:center;">
+          <div style="width:8px;height:8px;border-radius:50%;background:var(--teal);border:2px solid rgba(33,150,166,0.3);"></div>
+          ${i < f.legs.length - 1 ? '<div style="width:2px;height:28px;background:rgba(33,150,166,0.2);margin-top:2px;"></div>' : ''}
+        </div>
+        <div style="flex:1;background:#F0F9FF;border-radius:8px;padding:8px 12px;">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <span style="font-size:12px;font-weight:700;color:var(--deep-blue);">${leg.no}</span>
+            <span style="font-size:10px;color:var(--text-muted);background:#fff;padding:1px 8px;border-radius:10px;">${leg.plane}</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:6px;margin-top:4px;font-size:12px;">
+            <span><strong>${leg.fromTime}</strong> <span style="color:var(--text-muted);">${leg.from}</span></span>
+            <span style="color:var(--teal);">→</span>
+            <span><strong>${leg.toTime}</strong> <span style="color:var(--text-muted);">${leg.to}</span></span>
+          </div>
+        </div>
+      </div>`).join('') : '';
+        const detailHtml = f.legs ? `
+      <div id="${fid}" style="display:none;margin-top:12px;padding-top:12px;border-top:1px dashed var(--border);">
+        ${legsHtml}
+        <div style="margin-top:8px;display:flex;flex-wrap:wrap;gap:6px;">
+          ${f.stopoverDur ? `<span style="font-size:10px;background:#FFF8E1;color:var(--coral);padding:2px 8px;border-radius:10px;">中转等候 ${f.stopoverDur}</span>` : ''}
+          ${f.weekdays ? `<span style="font-size:10px;background:#E8F5E9;color:#2E7D32;padding:2px 8px;border-radius:10px;">运营日 ${f.weekdays}</span>` : ''}
+        </div>
+        ${f.note ? `<p style="font-size:11px;color:var(--teal);margin-top:6px;">ℹ️ ${f.note}</p>` : ''}
+      </div>` : '';
+        return `<div class="card" style="position:relative;${f.highlight ? 'border-color:var(--teal);' : ''}">
+      ${f.highlight ? `<span class="tag tag-red" style="position:absolute;top:-8px;left:12px;">${f.highlight}</span>` : ''}
+      <div style="display:flex;justify-content:space-between;margin-bottom:8px;">
+        <div><strong>${f.airline}</strong><div style="font-size:12px;color:var(--text-muted);">${f.route}</div></div>
+        <div style="text-align:right;"><div class="mono" style="font-size:16px;font-weight:700;color:var(--coral);">${f.price}</div><div style="font-size:11px;color:var(--text-muted);">经济舱/人</div></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;">
+        <div style="font-size:12px;color:var(--text-muted);">⏱ ${f.duration} · 转机${f.stops}次${f.stopover ? ' · 📍 ' + f.stopover : ''}</div>
+        <div style="display:flex;align-items:center;gap:6px;">
+          ${f.legs ? `<button onclick="var el=document.getElementById('${fid}');el.style.display=el.style.display==='none'?'block':'none';this.textContent=el.style.display==='none'?'详情 ▼':'收起 ▲';" style="font-size:11px;color:var(--teal);background:none;border:none;cursor:pointer;font-weight:600;">详情 ▼</button>` : ''}
+          <a href="${f.url}" target="_blank" class="btn btn-teal" style="font-size:11px;padding:5px 12px;">查看航班 ↗</a>
+        </div>
+      </div>
+      ${detailHtml}
+    </div>`;
+      }
+      document.getElementById('outbound-flights').innerHTML = OUTBOUND_FLIGHTS.map(flightCard).join('');
+      document.getElementById('return-flights').innerHTML = RETURN_FLIGHTS.map(flightCard).join('');
+    }
+
+    function renderItinerary() {
+      document.getElementById('itinerary-timeline').innerHTML = DAILY_PLANS.map(p => `
+    <div class="timeline-item">
+      <div class="timeline-dot" style="background:${p.color};">${p.icon}</div>
+      <div style="flex:1;margin-bottom:8px;">
+        <div class="timeline-card" onclick="toggleDay(${p.day})">
+          <div style="display:flex;justify-content:space-between;align-items:center;">
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px;">
+                <span class="tag" style="background:${p.color};color:#fff;">Day ${p.day}</span>
+                <span style="font-size:12px;color:var(--text-muted);">${p.date} ${p.weekday}</span>
+              </div>
+              <strong style="font-size:15px;">${p.title}</strong>
+              <div style="font-size:12px;color:var(--teal);margin-top:2px;">📍 ${p.city}</div>
+            </div>
+            <span style="font-size:18px;color:var(--text-muted);" id="arrow-${p.day}">▼</span>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;">${p.highlights.map(h => `<span class="tag tag-gray">${h}</span>`).join('')}</div>
+        </div>
+        <div class="timeline-expand" id="expand-${p.day}">
+          ${p.transport ? `<div class="tip-box tip-info" style="margin-bottom:12px;"><strong>🚄 ${p.transport}</strong></div>` : ''}
+          <div style="display:flex;align-items:center;gap:8px;background:linear-gradient(90deg,#E0F2FE,#DBEAFE);border-radius:10px;padding:10px 14px;margin-bottom:12px;">
+            <span style="font-size:18px;">🌡️</span>
+            <div><span class="mono" style="font-weight:700;font-size:13px;">${p.weather}</span><br><span style="font-size:11px;color:var(--teal);">👕 ${p.clothing}</span></div>
+          </div>
+          <div style="margin-bottom:12px;">
+            <div style="display:flex;gap:10px;margin-bottom:8px;"><span style="font-size:16px;">☀️</span><div><strong style="font-size:13px;">上午</strong><p style="font-size:12px;color:var(--text-muted);margin:2px 0 0;">${p.morning}</p></div></div>
+            <div style="display:flex;gap:10px;margin-bottom:8px;"><span style="font-size:16px;">🌅</span><div><strong style="font-size:13px;">下午</strong><p style="font-size:12px;color:var(--text-muted);margin:2px 0 0;">${p.afternoon}</p></div></div>
+            <div style="display:flex;gap:10px;margin-bottom:8px;"><span style="font-size:16px;">🌙</span><div><strong style="font-size:13px;">晚上</strong><p style="font-size:12px;color:var(--text-muted);margin:2px 0 0;">${p.evening}</p></div></div>
+          </div>
+          <div class="tip-box tip-warning"><strong>💡 提示：</strong>${p.tips}</div>
+          ${p.attractions.length > 0 ? `
+            <h4 style="font-size:14px;margin:16px 0 10px;display:flex;align-items:center;gap:6px;">🎫 景点详情与门票</h4>
+            ${p.attractions.map(a => `
+              <div class="attr-card">
+                ${a.img ? `<img class="attr-card-img" src="https://images.unsplash.com/photo-${a.img}?w=600&q=80&fit=crop&auto=format" alt="${a.name}" loading="lazy" onerror="this.style.display='none'">` : ''}
+                <div class="attr-card-body">
+                <h5>${a.name}</h5>
+                <p>${a.desc}</p>
+                <div class="attr-meta">
+                  <span>🎫 <strong>门票：</strong>${a.ticket}</span>
+                  <span>⏰ <strong>开放：</strong>${a.hours}</span>
+                </div>
+                ${a.tips ? `<div style="font-size:12px;color:var(--text-muted);margin-bottom:6px;">ℹ️ ${a.tips}</div>` : ''}
+                ${a.url ? `<a href="${a.url}" target="_blank" class="btn btn-coral" style="font-size:11px;padding:5px 12px;">预订门票 ↗</a>` : ''}
+                </div>
+              </div>`).join('')}` : ''}
+        </div>
+      </div>
+    </div>`).join('');
+    }
+
+    function toggleDay(day) {
+      const el = document.getElementById('expand-' + day);
+      const arrow = document.getElementById('arrow-' + day);
+      if (el.classList.contains('open')) {
+        el.classList.remove('open');
+        arrow.textContent = '▼';
+      } else {
+        el.classList.add('open');
+        arrow.textContent = '▲';
+      }
+    }
+
+    function renderSavingTips() {
+      document.getElementById('saving-tips').innerHTML = SAVING_TIPS_DATA.map(t => `
+    <div class="card"><div style="font-size:24px;margin-bottom:6px;">${t.icon}</div><strong style="font-size:14px;">${t.title}</strong>
+    <ul style="margin-top:8px;padding-left:16px;">${t.tips.map(tip => `<li style="font-size:12px;color:var(--text-muted);margin-bottom:4px;">${tip}</li>`).join('')}</ul></div>`).join('');
+    }
+
+    function renderPacking() {
+      const saved = JSON.parse(localStorage.getItem('packing-checklist') || '{}');
+      const allItems = PACKING.flatMap(c => c.items);
+      const container = document.getElementById('packing-container');
+      container.innerHTML = PACKING.map(cat => `
+    <h4 style="font-size:14px;margin:16px 0 8px;">${cat.title}</h4>
+    ${cat.items.map(item => {
+        const key = item.replace(/[^a-zA-Z\u4e00-\u9fff]/g, '');
+        const checked = saved[key] ? 'checked' : '';
+        return `<div class="checklist-item ${checked}" onclick="togglePacking('${key}')">
+        <div class="check-box"></div>
+        <span style="font-size:13px;">${item}</span>
+      </div>`;
+      }).join('')}`).join('');
+      const total = allItems.length;
+      const checked = Object.values(saved).filter(Boolean).length;
+      document.getElementById('packing-progress-fill').style.width = (checked / total * 100) + '%';
+      document.getElementById('packing-progress-text').textContent = checked + '/' + total;
+    }
+
+    function togglePacking(key) {
+      const saved = JSON.parse(localStorage.getItem('packing-checklist') || '{}');
+      saved[key] = !saved[key];
+      localStorage.setItem('packing-checklist', JSON.stringify(saved));
+      renderPacking();
+    }
+
+    function renderWeather() {
+      document.getElementById('weather-cards').innerHTML = WEATHER.map(w => `
+    <div class="card weather-card"><div style="font-size:24px;">☀️</div><strong>${w.city}</strong><div class="temp">${w.low}° - ${w.high}°</div><div style="font-size:11px;color:var(--text-muted);margin-top:4px;">${w.desc}</div></div>`).join('');
+    }
+
+    function renderEmergency() {
+      document.getElementById('emergency-container').innerHTML = EMERGENCY.map(cat => `
+    <div class="emergency-group">
+      <div class="emergency-header">${cat.icon} ${cat.category}</div>
+      ${cat.items.map(item => `
+        <div class="emergency-row">
+          <div style="flex:1;"><strong style="font-size:14px;">${item.name}</strong>${item.note ? `<div style="font-size:11px;color:var(--text-muted);">${item.note}</div>` : ''}</div>
+          <a href="tel:${item.number.replace(/[\s-]/g, '')}" class="btn btn-teal" style="font-size:12px;padding:5px 14px;">📞 ${item.number}</a>
+        </div>`).join('')}
+    </div>`).join('');
+    }
+
+    // ===== CHARTS =====
+    function initCharts() {
+      // Fee chart
+      new Chart(document.getElementById('feeChart'), {
+        type: 'doughnut',
+        data: { labels: ['签证费 €90', '服务费 ¥78'], datasets: [{ data: [744, 78], backgroundColor: ['#1A3A5C', '#2196A6'], borderWidth: 0 }] },
+        options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { size: 12 } } } } }
+      });
+
+      // Flight chart
+      const flightLabels = [...OUTBOUND_FLIGHTS.map(f => f.airline + '(去)'), ...RETURN_FLIGHTS.map(f => f.airline + '(回)')];
+      const flightData = [...OUTBOUND_FLIGHTS.map(f => f.avg), ...RETURN_FLIGHTS.map(f => f.avg)];
+      const flightColors = [...OUTBOUND_FLIGHTS.map(() => '#2196A6'), ...RETURN_FLIGHTS.map(() => '#1A3A5C')];
+      new Chart(document.getElementById('flightChart'), {
+        type: 'bar',
+        data: { labels: flightLabels, datasets: [{ label: '均价(¥)', data: flightData, backgroundColor: flightColors, borderRadius: 6 }] },
+        options: { indexAxis: 'y', responsive: true, plugins: { legend: { display: false } }, scales: { x: { ticks: { callback: v => '¥' + v.toLocaleString() } } } }
+      });
+
+      // Budget pie
+      const budgetLabels = ['机票', '住宿', '火车', '市内交通', '门票', '餐饮', '签证+保险', '其他'];
+      const budgetEconomy = [8000, 3750, 600, 400, 1000, 2000, 972, 750];
+      const budgetComfort = [10000, 6250, 1000, 600, 1600, 3250, 1072, 2000];
+      const budgetColors = ['#1A3A5C', '#2196A6', '#F5C842', '#E8614D', '#7B5EA7', '#2E7D32', '#424242', '#D4A017'];
+      new Chart(document.getElementById('budgetPieChart'), {
+        type: 'doughnut',
+        data: { labels: budgetLabels, datasets: [{ data: budgetEconomy, backgroundColor: budgetColors, borderWidth: 0 }] },
+        options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } } }
+      });
+
+      // Budget bar
+      new Chart(document.getElementById('budgetBarChart'), {
+        type: 'bar',
+        data: {
+          labels: budgetLabels, datasets: [
+            { label: '经济方案', data: budgetEconomy, backgroundColor: '#2196A6', borderRadius: 4 },
+            { label: '舒适方案', data: budgetComfort, backgroundColor: '#1A3A5C', borderRadius: 4 },
+          ]
+        },
+        options: { responsive: true, plugins: { legend: { position: 'bottom', labels: { font: { size: 11 } } } }, scales: { y: { ticks: { callback: v => '¥' + v.toLocaleString() } } } }
+      });
+
+      // Weather chart
+      new Chart(document.getElementById('weatherChart'), {
+        type: 'bar',
+        data: {
+          labels: WEATHER.map(w => w.city), datasets: [
+            { label: '最高温', data: WEATHER.map(w => w.high), backgroundColor: '#E8614D', borderRadius: 4 },
+            { label: '最低温', data: WEATHER.map(w => w.low), backgroundColor: '#2196A6', borderRadius: 4 },
+          ]
+        },
+        options: { responsive: true, plugins: { legend: { position: 'bottom' } }, scales: { y: { min: 0, max: 30 } } }
+      });
+    }
+
+    // ===== INIT =====
+    document.addEventListener('DOMContentLoaded', () => {
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+      renderChecklist();
+      renderProcess();
+      renderJurisdictions();
+      renderSchedule();
+      renderTips();
+      renderFlights();
+      renderItinerary();
+      renderSavingTips();
+      renderPacking();
+      renderWeather();
+      renderEmergency();
+      initCharts();
+
+      // Scroll spy for nav
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll(`.nav-btn`).forEach(b => {
+              if (b.getAttribute('onclick')?.includes(entry.target.id)) b.classList.add('active');
+            });
+          }
+        });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+      document.querySelectorAll('section[id]').forEach(s => observer.observe(s));
+    });
+  </script>
+</body>
+
+</html>
